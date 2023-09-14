@@ -3,8 +3,12 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'DM Sans', sans-serif;
-    color: #FFFFFF;
 }
+
+.flex {
+    display: flex;
+}
+
 
 .header {
     background: url('./assets/Poster.png');
@@ -16,6 +20,7 @@
     justify-content: flex-start;
     align-items: center;
     padding: 10rem;
+    color: #FFFFFF;
 }
 
 .nav-bar {
@@ -145,4 +150,53 @@
 .watch-trailer-button img {
     width: 1.25rem;
     height: 1.25rem;
+}
+
+.movies {
+    padding: 7rem;
+    color: #000;
+}
+
+.movies p {
+    font-size: 2.25rem;
+    line-height: 3rem;
+    font-weight: 700;
+}
+
+.movie-cards {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.card-info {
+    padding: 1rem 0;
+}
+
+.country, .genres {
+    font-size: .75rem;
+    line-height: 1rem;
+    font-weight: 700;
+    color: #9CA3AF;
+}
+
+.movie-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.75rem;
+    color: #111827;
+    margin-top: 1rem;
+    margin-bottom: 1.25rem;
+}
+
+.genres {
+    margin-top: 1.25rem;
+}
+
+.movie-card-ratings {
+    gap: 3.75rem;
+}
+
+.movie-card-ratings .flex {
+    gap: 1rem;
 }
