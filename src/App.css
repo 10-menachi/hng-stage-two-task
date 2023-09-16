@@ -134,11 +134,12 @@
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
     border-radius: 0.3rem;
     background: #BE123C;
     border: none;
     width: 12rem;
+    cursor: pointer;
 }
 
 .watch-trailer-button p {
@@ -166,7 +167,8 @@
 .movie-cards {
     margin-top: 3rem;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 6rem;
 }
 
 .card-info {
@@ -199,4 +201,303 @@
 
 .movie-card-ratings .flex {
     gap: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .logo, .buttons {
+        display: none;
+    }
+    .header {
+        padding: 5rem;
+    }
+
+    .nav-bar {
+        padding: 2rem;
+    }
+
+    .search-bar {
+        width: 100%;
+    }
+
+    .featured {
+        max-width: 100%;
+    }
+
+    .featured .title {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    .ratings {
+        gap: 1rem;
+    }
+
+    .imdb, .rotten-tomatoes {
+        gap: 0;
+    }
+
+    .watch-trailer-button {
+        width: 100%;
+    }
+
+    .watch-trailer-button p {
+        font-size: .8rem;
+        line-height: 1.5rem;
+    }
+
+    .watch-trailer-button img {
+        width: 1rem;
+        height: 1rem;
+    }
+
+    .movies {
+        padding: 3rem;
+    }
+
+    .movies p {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .movie-cards {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 3rem;
+    }
+
+    .card-info {
+        padding: 0;
+    }
+
+    .country, .genres {
+        font-size: .5rem;
+        line-height: .75rem;
+    }
+
+    .movie-title {
+        font-size: 1rem;
+        line-height: 1.25rem;
+    }
+
+    .genres {
+        margin-top: 1rem;
+    }
+
+    .movie-card-ratings {
+        gap: 1.5rem;
+    }
+
+    .movie-card-ratings .flex {
+        gap: .5rem;
+    }
+}
+
+.image-poster {
+    width: 100%;
+}
+
+.sidebar {
+    background: #FFFFFF;
+    width: 20%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-right: 2px solid #9CA3AF;
+    border-top-right-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+}
+
+.sidebar-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3rem;
+    padding: 1rem 0;
+}
+
+.active {
+    background-color: #F9E6EB;
+    border-right: 3px solid #BE123C;
+}
+
+.menu-item img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.play-movie-quizzes {
+    border: 1px solid #BE123C;
+    background-color: #F8E7EB;
+    margin: 0 3rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.c-title {
+    color: #333333;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.6rem;
+}
+
+.c-desc {
+    margin-top: .4rem;
+    color: #666666;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.start-playing {
+    border-radius: 2rem;
+    text-align: center;
+    margin-top: .5rem;
+    padding: .5rem;
+    color: #BE123C;
+    background-color: #e27f98;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.movie-details {
+    width: 65%;
+    margin-left: 25%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.backdrop {
+    width: 90%;
+    height: 10%;
+    border-radius: 2rem;
+}
+
+.tickets-icon, .list-icon {
+    width: 2rem;
+    height: 2rem;
+}
+
+.movie-details .title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2rem;
+}
+
+.movie-details .ratings {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.star {
+    color: gold;
+}
+.movie-details .title p {
+    font-weight: 500;
+    color: #404040;
+}
+
+.movie-details .details {
+    display: flex;
+}
+
+.desc {
+    font-weight: 400;
+    padding: 2rem;
+}
+
+.last-div {
+    display: flex;
+    padding: 2rem;
+    justify-content: flex-start;
+    gap: 3rem;
+}
+
+.par-a {
+    background: #BE123C;
+    padding: 1rem;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-weight: 500;
+}
+
+.par-b {
+    display: flex;
+    justify-content: space-between;
+}
+
+.picha {
+    width: 1rem;
+    object-fit: contain;
+}
+
+.movie-details .left {
+    width: 70%;
+}
+
+.showtimes {
+    display: flex;
+    padding: .75rem;
+    justify-content: center;
+    align-items: center;
+    background: #BE123C;
+    color: #FFFFFF;
+    border-radius: 10px;
+    gap: 1rem;
+    font-weight: 600;
+}
+
+.watch-options {
+    display: flex;
+    padding: .75rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background: #f8e7ec;
+    border: 1px solid #BE123C;
+    border-radius: 10px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.image-poster {
+    position: relative;
+}
+.image-poster .heart {
+    color: #d1d5db;
+    position: absolute;
+    z-index: 1000;
+    right: 2rem;
+    top: 2rem;
+    background-color: #9CA3AF;
+    text-align: center;
+    padding: .5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heart-icon {
+    font-size: 2rem;
 }

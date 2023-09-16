@@ -1,14 +1,11 @@
-import Logo from '../assets/tv.png'
 import { AiOutlineSearch } from 'react-icons/ai'
 import Menu from '../assets/Menu.png'
+import Logo from './Logo'
 
 const NavBar = () => {
   return (
     <div className='nav-bar'>
-        <div className="logo">
-            <img src={Logo} alt="Logo" />
-            <h3>MovieBox</h3>
-        </div>
+        <Logo />
         <div className="search-bar">
             <input type="text" placeholder="What do you want to watch?" />
             <AiOutlineSearch className='search-icon' />
