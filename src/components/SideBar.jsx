@@ -12,22 +12,22 @@ const SideBar = () => {
         <div className="sidebar-menu">
             <div className="menu-item">
                 <img src={Home} alt="" />
-                <p>Home</p>
+                <p className='none'>Home</p>
             </div>
             <div className="menu-item active">
                 <img src={MovieIcon} alt="" />
-                <p>Movies</p>
+                <p className='none'>Movies</p>
             </div>
             <div className="menu-item">
                 <img src={TVIcon} alt="" />
-                <p>TV Series</p>
+                <p className='none'>TV Series</p>
             </div>
             <div className="menu-item">
                 <img src={Calendar} alt="" />
-                <p>Upcoming</p>
+                <p className='none'>Upcoming</p>
             </div>
         </div>
-        <div className="play-movie-quizzes">
+        <div className="play-movie-quizzes none">
             <p className='c-title'>Play movie quizes and earn free tickets</p>
             <p className='c-desc'>50k people are playing now</p>
             <p className="start-playing">Start Playing</p>
@@ -35,7 +35,7 @@ const SideBar = () => {
 
         <div className="menu-item">
             <img src={LogOut} alt="" />
-            <p>Log Out</p>
+            <p className='none'>Log Out</p>
         </div>
     </div>
   )

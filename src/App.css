@@ -289,6 +289,15 @@
     .movie-card-ratings .flex {
         gap: .5rem;
     }
+
+    .none {
+        display: none;
+    }
+
+    .details {
+        flex-direction: column;
+        padding: 0 4rem;
+    }
 }
 
 .image-poster {
@@ -501,3 +510,4 @@ a {
 .heart-icon {
     font-size: 2rem;
 }
+

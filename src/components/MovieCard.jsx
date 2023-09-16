@@ -6,8 +6,8 @@ import { AiFillHeart } from 'react-icons/ai'
 
 const MovieCard = ({ id, title, release_date, poster}) => {
   return (
-    <Link to={`/movie/${id}`}>
-        <div className="movie-card" data-testid="movie-card">
+    <Link to={`/movies/${id}`} data-testid="movie-card">
+        <div className="movie-card">
             <div className="image-poster">
                 <p className="heart">
                     <AiFillHeart className="heart-icon" />

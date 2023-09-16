@@ -6,7 +6,7 @@ const Movies = ({ movies }) => {
     <div className="movies">
         <p className="title">Featured Movie</p>
         <div className="movie-cards">
-            {movies.map(movie => <MovieCard
+            {movies.slice(0, 10).map(movie => <MovieCard
             id={movie.id}
               title={movie.original_title}
               key={movie.id}

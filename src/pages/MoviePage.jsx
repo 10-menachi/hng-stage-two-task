@@ -6,11 +6,13 @@ import MovieDetails from "../components/MovieDetails";
 const MoviePage = ({ movies }) => {
   const { id } = useParams();
   const movie = movies.find(movie => String(movie.id) === id)
-  return (
+  return movie ? (
     <div>
       <SideBar />
       <MovieDetails movie={movie} />
     </div>
+  ) : (
+    <p>Loading...</p>
   )
 }
 
